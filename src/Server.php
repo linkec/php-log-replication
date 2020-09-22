@@ -45,7 +45,7 @@ class Server
      */
     protected $logSizeLimit = 200 * 1024 * 1024;
 
-    protected $password = 'password';
+    public $password = 'password';
 
     /**
      * Construct.
