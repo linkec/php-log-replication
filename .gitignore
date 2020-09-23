@@ -1,1 +1,4 @@
 Workerman
+logs
+*.pid
+workerman.log

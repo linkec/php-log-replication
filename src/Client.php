@@ -140,10 +140,10 @@ class Client
                     $logFile = $this->logFileName($this->logSN, "Client");
                     fclose($this->fileHandles[$logFile]);
                     unset($this->fileHandles[$logFile]);
-                    $this->isPulling = false;
                 }
                 $this->logSN = $data['logSN'];
                 $this->logPos = $data['logPos'];
+                $this->isPulling = false;
                 break;
             case 'push':
                 if ($data['bytes']) {
